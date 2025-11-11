@@ -2,5 +2,5 @@ Here is the link to the model
 https://drive.google.com/drive/folders/1gZvWHtuy1BcPmhduW4v2LNhbg89RJEPR?usp=drive_link
 
 model parameters:
-model input: [bathc_size, colour channels, height, width]
+model input: [bathc_size, colour channels, height, width] --> [32, 3, 224,224]
 model ouput: [class, bounding_box]
