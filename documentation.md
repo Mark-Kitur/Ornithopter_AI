@@ -24,8 +24,7 @@ The **Movement of the Ornithopter** is controlled by the **DRL Agent**, which pr
 | :--- | :--- |
 | **Onboard Compute Hardware** | **Raspberry Pi** |
 | **Core ML Frameworks** | **PyTorch** (for Object Detection), **Gymnasium Framework** (for DRL environment API) |
-| **Resource Constraints** | [***TBD: Specify required inference latency (e.g., need >5 FPS), memory footprint, and power budget.***] |
-
+| **Resource Constraints** | **Required Inference Latency (FPS):** Minimum **$5\text{ FPS}$** (Frames Per Second), with a target of **$10\text{ FPS}$** for stable real-time obstacle avoidance. This corresponds to a maximum inference time of $\le 200\text{ms}$ per frame. **Power Budget:** The combined system (RPi, Camera, Flight Controller, Actuators) is limited to a peak sustained draw of **$\le 7.5\text{ W}$** to maximize flight endurance. **Memory Footprint:** The total memory consumed must be contained within the **available RAM** (e.g., $\le 3\text{ GB}$ for a $4\text{ GB}$ RPi model) to prevent swapping. |
 ### C. Input/Output (I/O)
 
 The system is split into two modules: perception (Vision) and decision (DRL).
