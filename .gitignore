@@ -7,3 +7,4 @@ model_checkpoint_return.pth
 Fast_rcnn_V1.pth
 
 *.pth
+# bored.ipynb
